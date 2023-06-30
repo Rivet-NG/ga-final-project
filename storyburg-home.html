@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Storyburg Booksellers | Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/storyburg-home.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Pinyon+Script&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Pinyon+Script&family=Seaweed+Script&display=swap">
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.jpg" />
+            <nav id="header-nav">
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form id="search-box">
+            <input type="text">
+            <button type="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <nav id="main-nav">    
+            <ul>
+                <li><a href="#">BOOKS</a></li>
+                <li><a href="#">MOVIES</a></li>
+                <li><a href="#">MUSIC</a></li>
+                <li><a href="#">TOYS</a></li>
+                <li><a href="#">GAMES</a></li>
+                <li><a href="#">STATIONERY</a></li>
+                <li><a href="#">GIFTS</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">PUBLISH</a></li>
+                <li><a href="#">SELL</a></li>
+            </ul>
+        </nav>        
+        <div id="slideshow-window">    
+            <div id="slide-row">                    
+                <div class="slide-unit" id="invincible">
+                    <div class="slide-section">
+                        <h2>Invincible: Compendium One</h2>
+                        <p>Follow Mark Grayson on his journey to become one of Earth's greatest heroes after shortly developing his superpowers.</p>  
+                    </div>
+                    <div class="slide-section">
+                        <img src="images/invincible.jpg" />
+                    </div>
+                </div>
+                <div class="slide-unit" id="force-awakens">
+                    <div class="slide-section">
+                        <h2>Star Wars: The Force Awakens</h2>
+                        <p>Join a new cast of characters as they take on an entirely new threat in the latest chapter of the Star Wars series.</p>  
+                    </div>
+                    <div class="slide-section">
+                        <img src="images/star-wars-force-awakens.jpg" />
+                    </div>
+                </div>
+                <div class="slide-unit" id="opal-lee">
+                    <div class="slide-section">
+                        <h2>Opal Lee and What It Means to Be Free: The True Story of the Grandmother of Juneteenth</h2>
+                        <p>Witness the story of a young woman and her mission to protect her people's freedom and rights, and to spread the importance of a holiday that commemorates the start of them being treated equally.</p>  
+                    </div>
+                    <div class="slide-section">
+                        <img src="images/opal-lee.jpg" />
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div id="slide-togglers">
+            <svg>
+                <a onclick="slideBack(1)">
+                    <circle cx="0" cy="30" r="30" />
+                    <polyline points="20,15 5,30 20,45"></polyline>
+                </a>
+            </svg>
+            <svg>
+                <a onclick="slideForward(1)">
+                    <circle cx="60" cy="30" r="30" />
+                    <polyline points="40,15 55,30 40,45"></polyline>
+                </a>
+            </svg>
+        </div>
+        <form id="slide-selector">
+            <label>
+                <input type="radio" onclick="chooseQuickly(1)" checked />
+                <span class="radio-custom"></span>
+            </label>
+            <label>
+                <input type="radio" onclick="chooseQuickly(2)" />
+                <span class="radio-custom"></span>
+            </label>
+            <label>
+                <input type="radio" onclick="chooseQuickly(3)" />
+                <span class="radio-custom"></span>
+            </label>
+        </form>    
+        <div id="bookshelf-window">
+            <h3>This Month's Bestsellers</h3>
+            <div id="moving-shelf">
+                <div class="book-row">
+                    <div class="book-unit">
+                        <img src="images/late-americans.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/too-late.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/chemistry.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/covert-ops.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/countdown.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/yellowface.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/covenant.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/difficult-child.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/joshua-weissman.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/pageboy.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/rachel-incident.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/tucker.jpg" />
+                    </div>
+                </div>
+                <div class="book-row">
+                    <div class="book-unit">
+                        <img src="images/captain-underpants.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/king-of-pride.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/eyes-of-the-storm.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/heart-worth-stealing.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/pineapple-street.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/happy-place.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/art-thief.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/tomorrow.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/rocky-mountain.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/wimpy-kid-no-brainer.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/dreams-may-come.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/sunshine.jpg" />
+                    </div>
+                </div>
+                <div class="book-row">
+                    <div class="book-unit">
+                        <img src="images/good-fortune.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/owl-knows.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/wager.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/ends-with-us.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/dog-man.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/curator.jpg" />
+                    </div>
+                    <div class="book-unit">
+                        <img src="images/time-is-a-mother.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form id="book-selector">
+            <label>
+                <input type="radio" onclick="checkOutBooks(1)" checked />
+                <span class="radio-custom"></span>
+            </label>
+            <label>
+                <input type="radio" onclick="checkOutBooks(2)" />
+                <span class="radio-custom"></span>
+            </label>
+            <label>
+                <input type="radio" onclick="checkOutBooks(3)" />
+                <span class="radio-custom"></span>
+            </label>
+        </form>
+        <div id="shelf-shifters">
+            <svg>
+                <a onclick="checkOnLeft(1)">
+                    <circle cx="12.5" cy="12.5" r="12.5" />
+                    <polyline points="19.5,6.25 7,12.5 19.5,18.75"></polyline>
+                </a>
+            </svg>
+            <svg>
+                <a onclick="checkOnRight(1)">
+                    <circle cx="12.5" cy="12.5" r="12.5" />
+                    <polyline points="5.5,6.25 18,12.5 5.5,18.75"></polyline>
+                </a>
+            </svg>
+        </div>
+        <div id="ad-window">
+            <div id="ad-row">
+                <div class="ad-unit">
+                    <div class="ad-section" id="summer-reading">  
+                        <h2>Jump for Joy!</h2>
+                    </div>
+                    <div class="ad-section" id="summer-pack">
+                        <p>It's summertime, and we're giving you some of the hottest stories to binge-read! (50% OFF)</p>
+                        <div class="special-pack">
+                            <div class="special-item">
+                                <img src="images/icebreaker.jpg" />
+                            </div>
+                            <div class="special-item">
+                                <img src="images/crash-and-burn.jpg" />
+                            </div>
+                            <div class="special-item">
+                                <img src="images/california.jpg" />
+                            </div>
+                            <div class="special-item">
+                                <img src="images/madman.jpg" />
+                            </div>
+                        </div>
+                        <button>Click Here For More</button>
+                    </div>
+                </div>
+                <div class="ad-unit">
+                    <div class="ad-section" id="pride-month">
+                        <h2>Don't Feel Ashamed of Yourself...Be Proud!</h2>
+                    </div>
+                    <div class="ad-section" id="pm-pack">
+                        <p>No matter your orientation, you're always welcome to express yourself by reading tales of triumph and self-discovery. (50% OFF)</p>
+                        <div class="special-pack">
+                            <div class="special-item">
+                                <img src="images/ander-santi.jpg" />
+                            </div>
+                            <div class="special-item">
+                                <img src="images/liar.jpg" />
+                            </div>
+                            <div class="special-item">
+                                <img src="images/cody.jpg" />
+                            </div>
+                            <div class="special-item">
+                                <img src="images/euphoria.jpg" />
+                            </div>
+                        </div>
+                        <button>Click Here For More</button>
+                    </div>
+                </div>
+                <div class="ad-unit">
+                    <div class="ad-section" id="fathers-day">
+                        <h2>Spend Time With Your Dad Today!</h2>
+                    </div>
+                    <div class="ad-section" id="fd-pack">
+                        <p>Give him something special to show your appeciation for all he's done, or find something fun to do together! (50% OFF)</p>
+                        <div class="special-pack">
+                            <div class="special-item">
+                                <img src="images/action-heroes.jpg"/>
+                            </div>
+                            <div class="special-item">
+                                <img src="images/yellowstone.jpg"/>
+                            </div>
+                            <div class="special-item">
+                                <img src="images/long-shot.jpg"/>
+                            </div>
+                            <div class="special-item">
+                                <img src="images/star-wars-at-at.jpg"/>
+                            </div>
+                        </div>
+                        <button>Click Here For More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form id="ad-selector">
+            <i class="fa-solid fa-chevron-left" onclick="prevAd(1)"></i>
+            <label>
+                <input type="radio" onclick="adFadeInAndOut(1)" checked />
+                <span class="radio-custom"></span>
+            </label>
+            <label>
+                <input type="radio" onclick="adFadeInAndOut(2)" />
+                <span class="radio-custom"></span>
+            </label>
+            <label>
+                <input type="radio" onclick="adFadeInAndOut(3)" />
+                <span class="radio-custom"></span>
+            </label>
+            <i class="fa-solid fa-chevron-right" onclick="nextAd(1)"></i>
+        </form>
+        <footer>
+            <h3>Enter your email for newsletters, promo codes, and a chance to win free prizes!</h3>
+            <form id="email-box">
+                <input type="email">
+                <button type="button">
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
+            </form>
+            <nav id="footer-nav">
+                <h4>SERVICES</h4>
+                <ul>
+                    <h4>SERVICES</h4>
+                    <li><a href="#">Publish Your Own Book</a></li>
+                    <li><a href="#">Sell Your Pack</a></li>
+                    <li><a href="#">Become An Affiliate</a></li>
+                    <li><a href="#">Shipping, Handling, & Returns</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Store Pickup</a></li>
+                </ul>
+                <h4>ABOUT US</h4>
+                <ul>
+                    <h4>ABOUT US</h4>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">List of Policies</a></li>
+                    <li><a href="#">Hours & Locations</a></li>
+                    <li><a href="#">Career Opportunities</a></li>
+                </ul>
+                <h4>MY ACCOUNT</h4>
+                <ul>
+                    <h4>MY ACCOUNT</h4>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Security & Permissions</a></li>
+                    <li><a href="#">Do Not Sell My Information</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <h3>Got Any Questions? Feel Free to Reach Out to Us!</h3>
+            <p>Phone Number: (123) 456-7890</p>
+            <p>Email Address: writersden@storyburg.com</p>
+            <p>&copy;2023 Storyburg Booksellers</p>
+        </footer>
+        <script src="js/slideshow.js"></script>
+        <script src="js/bookshelf.js"></script>
+        <script src="js/adlist.js"></script>
+    </body>
+</html>
